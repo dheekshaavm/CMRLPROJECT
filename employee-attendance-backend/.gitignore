@@ -1,0 +1,33 @@
+# Node.js & npm/yarn specific
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json # Or yarn.lock, depending on your preference
+# yarn.lock
+
+# Environment variables for the backend
+.env
+.env.*
+!.env.example
+
+# Log files
+*.log
+logs/
+*.logs
+
+# Build output (if your backend has a build step, e.g., for TypeScript)
+dist/
+build/
+
+# IDE / Editor specific
+.vscode/
+.idea/
+
+# Operating System generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*~
