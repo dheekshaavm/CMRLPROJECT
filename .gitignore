@@ -1,1 +1,61 @@
-node_modules
+# Node.js & npm/yarn specific
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json # If you prefer to only commit yarn.lock or neither
+# yarn.lock # If you prefer to only commit package-lock.json or neither
+# (It's generally recommended to commit one lock file: either package-lock.json for npm or yarn.lock for yarn)
+
+# Expo specific
+.expo/
+dist/
+web-build/
+*.jks
+*.p8
+*.p12
+*.mobileprovision
+certs/
+# .eas/ # Usually managed by EAS CLI and often committed, but can be ignored if preferred
+
+# Build artifacts from 'expo prebuild' (if you run it locally and don't want to commit)
+# android/
+# ios/
+# For EAS Build workflows, it's common NOT to commit these generated native directories.
+# If you manage native code directly and want to commit them, then remove these lines.
+
+# Environment variables
+# Never commit .env files containing secrets.
+# Commit an example file instead.
+.env
+.env.*
+!.env.example
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.project
+*.sublime-project
+*.sublime-workspace
+
+# Operating System generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+logs
+*.logs
+
+# Coverage output
+coverage/
+*.lcov
+
+# Temporary files
+*.tmp
+*~
